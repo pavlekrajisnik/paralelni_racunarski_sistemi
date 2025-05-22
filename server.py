@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify, send_from_directory
 import os
 import time
@@ -22,7 +21,11 @@ def save_uploaded_files(files):
     return saved_paths
 
 def convert_to_webp(path):
-    img = Image.open(path).convert("RGB")
+    img = Image.open(path)
+    if img.mode in ("RGBA", "P"):
+        img = img.convert("RGBA")
+    else:
+        img = img.convert("RGB")
     out_name = os.path.basename(path).rsplit(".", 1)[0] + ".webp"
     out_path = os.path.join(CONVERTED_FOLDER, out_name)
     img.save(out_path, "webp")

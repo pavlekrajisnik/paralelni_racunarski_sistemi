@@ -1,21 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Upload i Konverzija Slika</title>
   <link rel="stylesheet" href="style.css" />
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <h1>🖼️ Upload slika i konverzija u WebP</h1>
   <form id="upload-form" enctype="multipart/form-data">
-    <input type="file" id="images" name="images" accept=".jpg,.jpeg,.png" multiple required />
+    <input type="file" id="images" name="images" accept="image/*" multiple required />
     <button type="submit">Konvertuj</button>
   </form>
   <div id="result"></div>
-<canvas id="chart" width="400" height="200"></canvas>
-
+  <canvas id="chart" width="400" height="200"></canvas>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 document.getElementById("upload-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData();
@@ -45,9 +44,7 @@ document.getElementById("upload-form").addEventListener("submit", function (e) {
             }
         });
 
-        
         resultDiv.innerHTML = `
-
             <p><strong>Serijsko vreme:</strong> ${data.serial_time.toFixed(4)} sekundi</p>
             <p><strong>Paralelno vreme:</strong> ${data.parallel_time.toFixed(4)} sekundi</p>
             <p><strong>Ubrzanje:</strong> ${(data.serial_time / data.parallel_time).toFixed(2)}x</p>
