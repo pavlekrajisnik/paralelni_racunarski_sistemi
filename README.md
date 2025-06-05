@@ -12,4 +12,18 @@ This project is a web-based application for converting image files (JPG, PNG, et
 - Built with Flask, Python, JavaScript, and Pillow
 
 ## 📂 Project Structure
+📁 uploads/ # Temp folder for uploaded images
+📁 converted/ # Output folder for converted WebP files
+📄 app.py # Flask backend logic
+📄 index.html # Main frontend UI
+📄 script.js # JavaScript logic (upload & fetch)
+📄 style.css # Styling
 
+## 🛠️ Technologies
+
+- Python 3.x
+- Flask
+- Pillow (PIL)
+- multiprocessing
+- HTML/CSS/JS
+- Chart.js
