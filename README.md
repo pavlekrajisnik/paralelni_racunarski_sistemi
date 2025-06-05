@@ -27,3 +27,10 @@ This project is a web-based application for converting image files (JPG, PNG, et
 - multiprocessing
 - HTML/CSS/JS
 - Chart.js
+
+## ⚙️ Installation & Running
+
+``bash
+git clone 
+pip install Flask Pillow
+python3 server.py
